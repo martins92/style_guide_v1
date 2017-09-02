@@ -1,0 +1,24 @@
+//==============================================================================
+//-----------------                   Buttons                  -----------------
+//==============================================================================
+
+
+
+.btn {
+	@include m-bg-colors($ui-colors);
+}
+
+[class^="btn--"] {
+  text-align: center;
+
+  @extend %btn;
+  margin-bottom: em(20px, 14px);
+  @include mq(small) {
+    width: 100%;
+  }
+  @include mq(medium) {
+    width: auto;
+    display: inline-block;
+    @include doubly(20px);
+  }
+}

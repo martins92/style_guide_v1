@@ -1,0 +1,13 @@
+.card {
+  p {
+  @extend %card;
+  }
+}
+
+.blockquote {
+  margin: em(45px) 0;
+  font-size: em(25px);
+  font-weight: bold;
+  padding: 0 em(15px);
+  border-left: 8px solid $color-primary;
+}

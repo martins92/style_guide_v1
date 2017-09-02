@@ -1,0 +1,31 @@
+//==============================================================================
+//-----------------                Base styles                 -----------------
+//==============================================================================
+
+// The universal selector (*)
+
+* {
+  -moz-box-sizing: border-box;
+	box-sizing: border-box;
+  font-family: $font-family--primary;
+}
+
+
+// Ul elements
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+// P elements
+
+p {
+  color: palette($dark-grey);
+  font-size: $base__font-size;
+  line-height: ($base__line/$base__font-size);
+  margin: 0 0 em(30px, 18px);
+ 	font-weight: $font-weight--light;
+ 	line-height: (27px/18px);
+}

@@ -1,0 +1,37 @@
+//==============================================================================
+//-----------------                 Functions                  -----------------
+//==============================================================================
+
+// Import if Google Fonts URL is defined
+
+@if variable-exists(font-url--google) {
+  @import url($font-url--google);
+}
+
+// Calculate em values
+
+@function em($target, $context: $base__font-size) {
+	@return ($target / $context) * 1em;
+}
+
+// Set the "context" width for the grid (1. column width, 2. column count and 3. gutter width)
+
+@function g-context($g-col-width, $g-col-count ,$g-gutter-width) {
+  $g-context: ($g-col-width * $g-col-count) + ($g-gutter-width * ($g-col-count - 1));
+  @return $g-context;
+}
+
+// Color Modifier
+
+@function palette($color, $shade: 'base') {
+  $virtual-palette: (
+    xx-light : lighten($color, 43%),
+    x-light  : lighten($color, 35%),
+    light    : lighten($color, 12%),
+    base     : $color,
+    dark     : darken($color, 8%),
+    x-dark   : darken($color, 16%)
+  );
+
+  @return map-get($virtual-palette, $shade);
+}

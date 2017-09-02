@@ -1,0 +1,20 @@
+
+.headline {
+	&--primary {
+		@extend %hdln-prim;
+	}
+
+ 	&--secondary {
+		@extend %hdln-sec;
+  }
+}
+
+.card {
+	a {
+		@extend %card-link;
+	}
+
+	p {
+		font-weight: 400;
+	}
+}

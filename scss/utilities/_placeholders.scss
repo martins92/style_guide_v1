@@ -1,0 +1,166 @@
+//==============================================================================
+//-----------------               Placeholders                 -----------------
+//==============================================================================
+
+
+
+
+//==============================================================================
+//-----------------                 Typography                 -----------------
+//==============================================================================
+
+%hdln-prim {
+  color: palette($color-primary);
+  font-weight: $font-weight--bold;
+  font-size: em(35px);
+  line-height: (46px/42px);
+  margin-top: 0;
+  text-align: center;
+}
+%hdln-sec {
+  color: palette($dark-grey);
+  letter-spacing: $letter-space;
+  font-weight: $font-weight--medium;
+  font-size: em(19px);
+  margin: 0 0 em(10px);
+}
+
+//==============================================================================
+//-----------------               Navigation                 -----------------
+//==============================================================================
+
+// Main nav
+
+%nav {
+  @include mq(small) {
+    @include flex-dir-align(column, center);
+    margin: 50px 0;
+  }
+
+  @include mq(medium) {
+    @include flex-dir-align(row, flex-start);
+  }
+}
+
+%nav-item {
+    margin: em(5px) em(10px);
+}
+
+// Links
+
+%nav-item-link {
+  color: palette($dark-grey);
+  text-decoration: none;
+  font-weight: $font-weight--medium;
+  letter-spacing: 0.7px;
+  text-align: center;
+  display: inline-block;
+  font-size: em(16px);
+  padding: em(10px, 18px);
+  border-bottom: 1px solid transparent;
+}
+
+%nav-item-on {
+  font-weight: $font-weight--medium;
+  letter-spacing: 0.68px;
+  color: palette($white);
+  border-radius: 5px;
+  background-color: palette($color-primary);
+  border-color: $color-primary;
+}
+
+// Images
+
+%img {
+  max-width: 100%;
+}
+
+//==============================================================================
+//-----------------               Main section                 -----------------
+//==============================================================================
+
+%card {
+  padding: 0 em(15px);
+}
+
+%card-link {
+  text-decoration: none;
+  color: $color-secondary;
+}
+
+%form {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+%form-input {
+  font-size : em(18px);
+  margin-bottom: em(20px, 18px);
+  color: palette($dark-grey);
+  font-weight: $font-weight--medium;
+  display: block;
+  padding: 15px 0;
+  width: 100%;
+  outline: 0;
+  border: 0;
+}
+
+%btn {
+  padding: 10px 30px;
+  border: 0;
+  border-radius : $br--default;
+  color: $white;
+  font-size : em(14px);
+  font-weight: $font-weight--medium;
+  display: block;
+  &:hover {
+    opacity: .75;
+    cursor: pointer;
+  }
+  &:active {
+    opacity: initial;
+  }
+}
+
+//==============================================================================
+//-----------------               Grid system                  -----------------
+//==============================================================================
+
+%row {
+  margin: 20px 0;
+}
+
+%grid-system {
+  margin: 0 auto;
+  padding: 10px 30px;
+  border: 0;
+  color: $white;
+  font-size : em(14px);
+  font-weight: $font-weight--medium;
+  @include mq(medium) {
+    border-radius: $br--default;
+  }
+}
+
+%center-text {
+  display: inline;
+  text-align: center;
+}
+
+//==============================================================================
+//-----------------               Helpers                      -----------------
+//==============================================================================
+
+// Screen reader text
+
+.srt {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}

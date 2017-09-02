@@ -1,0 +1,93 @@
+//==============================================================================
+//-----------------                  Variables                 -----------------
+//==============================================================================
+
+// Fonts
+
+$font-url--google        : "https://fonts.googleapis.com/css?family=Lato:100,300,400,700";
+$font-family--primary    : 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+// Font Sizes
+
+$base__font-size : 16px;
+$base__line      : 24px;
+$letter-space    : 1px;
+
+// Font Weights
+
+$font-weight--thin       : 100;
+$font-weight--light      : 300;
+$font-weight--medium     : 400;
+$font-weight--bold       : 700;
+$font-weight--ultra-bold : 900;
+
+//==============================================================================
+//-----------------               Break points                 -----------------
+//==============================================================================
+
+$brkpoint-sm    : 1px;
+$brkpoint-md    : 768px;
+
+//==============================================================================
+//-----------------                Base colors                 -----------------
+//==============================================================================
+
+$white          : #fff;
+$dark-grey      : #575757;
+
+$malibu         : #47deff;
+$emerald        : #78c58f;
+$sunglo         : #ff8f93;
+$coral          : #ff9c7e;
+$purple-majesty : #bd9cff;
+
+// Primary Colors
+
+$color-primary   : #50e3c2;
+$color-secondary : #4ddeff;
+
+// Column Background Colours
+
+$grid-colors: (
+  3   : #ce86e9,
+  4   : #e0b47c,
+  5   : #9de997,
+  6   : #838edc,
+  7   : #d9856d,
+  8   : #78c0ab,
+  12  : #7fd079
+);
+
+//==============================================================================
+//-----------------                 UI colors                  -----------------
+//==============================================================================
+
+$ui-colors: (
+	default : $malibu,
+	success : $emerald,
+	error   : $sunglo,
+	warning : $coral,
+	info    : $purple-majesty,
+);
+
+//==============================================================================
+//-----------------                Grid system                 -----------------
+//==============================================================================
+
+$g-col-width    : 65px;
+$g-gutter-width : 20px;
+$g-col-count    : 12;
+$g-cont-max-w   : 1050px;
+
+// Border radius
+
+$br--default    : .4em;
+$br--round      : 50%;
+
+// Transitions
+
+$trns-duration  : .3s;
+
+// Path to Assets
+
+$path--rel      : "../img";

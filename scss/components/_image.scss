@@ -1,0 +1,27 @@
+//==============================================================================
+//-----------------                  Images                    -----------------
+//==============================================================================
+.img {
+
+  @include m(logo) {
+    @extend %img;
+    margin: auto;
+  }
+
+  @include m(avatar) {
+    @extend %img;
+    display: block;
+    margin: 0 auto;
+  }
+  @include m(frame) {
+    @extend %img;
+    display: block;
+    @extend .centered;
+  }
+}
+
+[class*="grid__col--"] > .link {
+  display: block;
+  max-width: 100%;
+  text-align: center;
+}

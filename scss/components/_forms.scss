@@ -1,0 +1,30 @@
+//==============================================================================
+//-----------------                  Forms                     -----------------
+//==============================================================================
+
+
+
+
+.form {
+  @extend %form;
+
+  @include e(label) {
+      @include m(hidden) {
+          @extend .srt;
+      }
+  }
+
+  @include e(input) {
+    @extend %form-input;
+    border-bottom: solid 10px $color-primary;
+  }
+
+  @include e(btn) {
+      @extend %btn;
+      background: $color-primary;
+  }
+
+  img {
+    padding: 10% 20%;
+  }
+}
