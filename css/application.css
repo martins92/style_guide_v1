@@ -14,7 +14,7 @@
   font-size: 1.1875em;
   margin: 0 0 0.625em; }
 
-@media (min-width: 1px) and (max-width: 768px) {
+@media (min-width: 1px) {
   .nav {
     display: flex;
     flex-direction: column;
@@ -164,7 +164,7 @@
     .theme__colors, .theme__colors--default, .theme__colors--success, .theme__colors--error, .theme__colors--warning, .theme__colors--info {
       border-radius: 0.4em; } }
 
-@media (min-width: 1px) and (max-width: 768px) {
+@media (min-width: 1px) {
   [class*="grid__col--"] {
     margin-top: 0.75em;
     margin-bottom: 0.75em; } }
@@ -227,7 +227,7 @@
 [class^="btn--"] {
   text-align: center;
   margin-bottom: 1.4285714286em; }
-  @media (min-width: 1px) and (max-width: 768px) {
+  @media (min-width: 1px) {
     [class^="btn--"] {
       width: 100%; } }
   @media (min-width: 769px) {
@@ -241,7 +241,7 @@
   border-bottom: solid 10px #50e3c2; }
 .form__btn {
   background: #50e3c2; }
-.form img {
+.form .img--avatar {
   padding: 10% 20%; }
 
 .img--logo {
